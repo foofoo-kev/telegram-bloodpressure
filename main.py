@@ -183,7 +183,6 @@ def main():
             SYS: [MessageHandler(filters.TEXT & ~filters.COMMAND, save_sys)],
             DIA: [MessageHandler(filters.TEXT & ~filters.COMMAND, save_dia)],
             PULSE: [MessageHandler(filters.TEXT & ~filters.COMMAND, save_pulse)],
-            CONFIRM_DELETE: [MessageHandler(filters.TEXT & ~filters.COMMAND, delete_all_measurements)],
         },
         fallbacks=[CommandHandler("cancel", cancel)],
     )
