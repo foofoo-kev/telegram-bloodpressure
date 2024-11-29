@@ -26,7 +26,8 @@ git clone https://github.com/foofoo-kev/telegram-bloodpressure.git
 cd telegram-bloodpressure
 ```
 
-**2) Enter Telegram Token**
+**2) Enter Telegram Access-Token**
+
 Edit the ```TELEGRAMBOT_TOKEN``` line in the ```docker-compose.yml```
 
 **3) Start the bot**
