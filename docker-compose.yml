@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  bloodpressurebot:
+    container_name: bloodpressure-bot
+    restart: unless-stopped
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - "./data/bloodpressure.db:/opt/bloodpressure.db"
+    environment:
+      - "TELEGRAMBOT_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      - "TZ=Europe/Berlin"
